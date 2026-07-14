@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnihidros — Sistema de taller</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="app"><!-- Aquí el Controlador pinta cada pantalla --></div>
+
+  <!-- Orden importante: Modelo y Vista antes que el Controlador -->
+  <script src="js/model.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/controller.js"></script>
+  <script>
+    Controller.init();
+  </script>
+</body>
+</html>
