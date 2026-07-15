@@ -3,7 +3,7 @@ import { verificarToken } from '@/lib/auth';
 
 const rutasPublicas = ['/login', '/api/login'];
 
-export async function middleware(request) {
+export async function proxy(request) {
     const { pathname } = request.nextUrl;
 
     if (rutasPublicas.some(ruta => pathname.startsWith(ruta))) {
